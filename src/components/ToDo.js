@@ -112,9 +112,7 @@ function Todo({ todo, index, completeTodo, unCompleteTodo, removeTodo }) {
                       />
                     ))}   
                   </div>
-              </div><div className="card-pixels-todo">
-                    <span className="pixels">todos</span>
-                    </div>
+              </div>
             </div>
       </div>
     );

@@ -170,26 +170,7 @@ h2 {
   max-height: 20px;
   position: relative;
   display: flex;
-  margin-bottom: 5px;
-}
-
-.card-pixels > .pixels{
-  font-size: 18px !important;
-  color: var(--grey) !important;
-}
-
-.card-pixels-todo {
-  height: 20px;
-  margin-top: 118%;
-  margin-left: 350px !important;
-  position: absolute; 
-  z-index: 1; padding-top:75px; 
-}
-
-.card-pixels-todo > .pixels{
-  padding-top:150px; 
-  font-size: 20px !important;
-  color: var(--neptune) !important;
+  margin-bottom: 5 px;
 }
 
 /*---------------- Styling for todo section ---------------------*/
@@ -228,7 +209,7 @@ h2 {
   background-color: var(--neptune)  !important;
   padding: 5px;
   margin-top: 10px;
-  margin-left: 20px;
+  margin-left: 5px;
   font-weight: 600 !important; 
   border-radius: 6px 6px 6px 6px;
   width: 130px;
@@ -237,7 +218,7 @@ h2 {
 .btn-icon-trash {
   background-color: var(--red) !important;
   color: var(--white) !important;
-  margin-left: 20px;
+  margin-left: 5px;
 }
 
 .btn-icon-trash:hover {
@@ -251,7 +232,7 @@ h2 {
 .btn-icon-check {
   background-color: var(--rush)!important;
   color: var(--white) !important;
-  margin-left: 20px;
+  margin-left: 5 px;
 }
 
 .btn-icon-check:hover {
@@ -264,7 +245,7 @@ h2 {
 .btn-icon-redo {
   background-color: var(--neptune) !important;
   color: var(--white) !important;
-  margin-left: 20px;
+  margin-left: 5px;
 }
 
 .btn-icon-redo:hover {
