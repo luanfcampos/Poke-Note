@@ -14,5 +14,5 @@ function Clips() {
         </Container>
     );
   }
-
+  
 export default Clips;
