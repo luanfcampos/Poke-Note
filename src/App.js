@@ -1,23 +1,64 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+
+//App Components
+import NotesApp from './components/Notes';
+import Main from './components/ToDo';
+import CalenderApp from './components/Calender';
+import FavoriteLinks from './components/Favorites';
+import Header from './layout/Header';
+import Clip from './layout/Clips';
+
+//Router Components para navegação DOM
+import { BrouserRouter, Route } from 'react-router-dom'
+
+//React-Bootstrap Components
+import { Container, Col, Row } from 'react-bootstrap'
+
+//Component principal
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container>
+        <Row>
+        <header className="App-header">
+              {/* vai mostrar o clip */}
+              <Clip /> 
+          </header>
+          <header className="App-header">
+              {/* Titulo da página */}
+              <Header /> 
+          </header>
+        </Row>
+        <Row>
+            <Col className="col-12 col-md-6 col-lg-6"> 
+              {/* vai mostrar a seção de notas */}
+              <BrowserRouter>
+                <Route path="/" component={NotesApp}/> 
+              </BrowserRouter>
+            </Col>
+            <Col className="col-12 col-md-6 col-lg-6">  
+              {/* vai mostrar a seção to-do */}
+              <BrowserRouter>
+                <Route path="/" component={Main}/> 
+              </BrowserRouter>
+            </Col>
+        </Row>
+        <Row>
+          <Col className="col-12 col-md-6 col-lg-6"> 
+            {/* vai mostrar a seção favoritos */}
+            <BrowserRouter>
+              <Route path="/" component={FavoriteLinks}/> 
+            </BrowserRouter>
+          </Col>
+          <Col className="col-12 col-md-6 col-lg-6"> 
+            {/* vai mostrar a seção do calendario */}
+            <BrowserRouter>
+                <CalenderApp />  
+            </BrowserRouter>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }
