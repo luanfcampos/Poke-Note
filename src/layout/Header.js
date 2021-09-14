@@ -8,7 +8,7 @@ function Header() {
                 <div className="Header">
                     <h1 className="app-title">
                         <span className='pixels'> pxn </span>
-                        Poket Book
+                        Poke-Notes
                         <span className='pixels'> cli </span>
                     </h1>           
                 </div>
