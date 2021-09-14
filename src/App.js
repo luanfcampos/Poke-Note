@@ -4,7 +4,7 @@ import Main from './components/ToDo';
 import CalenderApp from './components/Calender';
 import FavoriteLinks from './components/Favorites';
 import Header from './layout/Header';
-import Clip from './layout/Clips';
+import Clips from './layout/Clips';
 import { BrowserRouter, Route } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.css';
 import {Container, Col, Row} from 'react-bootstrap';
@@ -15,7 +15,7 @@ function App() {
       <Container>
         <Row>
         <header className="App-header">
-              <Clip /> 
+              <Clips /> 
           </header>
           <header className="App-header">
               <Header /> 
